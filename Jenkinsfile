@@ -9,7 +9,7 @@ pipeline {
                 echo 'bhaiyya code clone ho gaya'
             }
         }
-        stage("My Build and Test"){
+        stage("Build and Test"){
             steps{
                 sh "docker build -t node-app-test-new ."
                 echo 'code build bhi ho gaya'
